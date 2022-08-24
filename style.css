@@ -98,7 +98,7 @@ header.sticky{
 }
 
 .home{
-    background:url(/images/home-bg.jpg) no-repeat;
+    background:url(images/home-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -470,7 +470,7 @@ header.sticky{
 }
 
 .footer{
-    background:url(/images/background-img.jpg) no-repeat;
+    background:url(images/background-img.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
