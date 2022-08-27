@@ -78,17 +78,17 @@ header .navbar a{
 }
 
 
-
 header .navbar a:hover{
     background: #8250d3;
     color:#fff;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
 
+/*
 header.sticky{
     background:#fff;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-}
+}*/
 
 #menu{
     font-size: 3rem;
@@ -172,7 +172,7 @@ header.sticky{
 }
 
 .symptoms{
-    background:url(images/background-img.jpg) no-repeat;
+    background:url(/images/background-img.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -532,7 +532,7 @@ header.sticky{
     color: #ff0505;
 }
 
-
+/* scroll top icon */
 .scroll-top{
     position: fixed;
     bottom:7.5rem; right:1.5rem;
@@ -544,6 +544,8 @@ header.sticky{
     animation: float 3s linear infinite;
 }
 
+/* scroll top icon */
+
 @keyframes float{
     100%, 0%{
         transform: translateY(0rem);
@@ -554,7 +556,6 @@ header.sticky{
     }
 
 }
-
 
 /* media queries  */
 
@@ -576,7 +577,6 @@ header.sticky{
     #menu{
         display: block;
     }
-
 
     header .navbar{
         position: absolute;
@@ -601,20 +601,24 @@ header.sticky{
         font-size: 2rem;
     }
 
+    /* to rotate the menu bar by 180 deg */
     .fa-times{
         transform: rotate(180deg);
     }
 
+    /* for hiding the main img in the symptoms section */
     .symptoms .column .main-image img{
         display: none;
     }
 
+    /* for hiding the main img in the hand-wash section */
     .hand-wash .column .main-image img{
         display: none;
     }
 
 }
 
+/* home section */
 @media (max-width:768px){
 
     html{
@@ -628,7 +632,6 @@ header.sticky{
     .home .content h3{
         font-size: 3.5rem;
     }
-
 }
 
 @media (max-width:450px){
