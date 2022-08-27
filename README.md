@@ -9,3 +9,7 @@ Steps to run the webpage
 5. Open the index.html file.
 6. Right Click on the index.html file, there you can see a "OPEN WITH THE LIVE SERVER" option.
 7. Click on this option, then you will be redirected back to a web server and there you can see the site. 
+
+
+About the Webpage :
+The webpage is related to Covid-19 that helps people to know about the symptoms of CoronoVirus, some preventive methods and precautions that should be followed to be safe from the CoronaVirus.
