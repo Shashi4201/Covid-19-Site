@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <!--  css file link  -->
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="/style.css">
 
 </head>
 <body>
@@ -19,14 +18,13 @@
 <div id="preloader"></div>
 
 
-
 <!-- header section starts  -->
 
 <header>
 
     <a href="#home" class="logo">c
         <span>
-            <img src="images/Coronavirus.gif" alt="Image Missing" width="27rem">
+            <img src="/images/Coronavirus.gif" alt="Image Missing" width="27rem">
         </span>vid-19</a>
 
     <div id="menu" class="fas fa-bars"></div>
@@ -133,7 +131,7 @@
 
 <div class="full-img" id="fullImgBox">
 
-    <img src="images/symp-a.png" alt="Image Missing" id="fullImg">
+    <img src="/images/symp-a.png" alt="Image Missing" id="fullImg">
     <span onclick="closeFullImg()">X</span>
 
 </div>
@@ -303,8 +301,8 @@
             <span>senior expert</span>
             <div class="share">
                 <a href="https://www.whatsapp.com/" class="fab fa-whatsapp"></a>
-                <b href="https://www.facebook.com/" class="fab fa-facebook-f"></b>
-                <c href="https://twitter.com/" class="fab fa-twitter"></c>
+                <b href="https://www.facebook.com" class="fab fa-facebook-f"></b>
+                <c href="https://www.twitter.com/" class="fab fa-twitter"></c>
                 <d href="https://www.instagram.com/" class="fab fa-instagram"></d>
                 <e href="https://www.linkedin.com/" class="fab fa-linkedin"></e>
             </div>
@@ -317,7 +315,7 @@
             <div class="share">
                 <a href="https://www.whatsapp.com/" class="fab fa-whatsapp"></a>
                 <b href="https://www.facebook.com/" class="fab fa-facebook-f"></b>
-                <c href="https://twitter.com/" class="fab fa-twitter"></c>
+                <c href="https://www.twitter.com/" class="fab fa-twitter"></c>
                 <d href="https://www.instagram.com/" class="fab fa-instagram"></d>
                 <e href="https://www.linkedin.com/" class="fab fa-linkedin"></e>
             </div>
@@ -330,7 +328,7 @@
             <div class="share">
                 <a href="https://www.whatsapp.com/" class="fab fa-whatsapp"></a>
                 <b href="https://www.facebook.com/" class="fab fa-facebook-f"></b>
-                <c href="https://twitter.com/" class="fab fa-twitter"></c>
+                <c href="https://www.twitter.com/" class="fab fa-twitter"></c>
                 <d href="https://www.instagram.com/" class="fab fa-instagram"></d>
                 <e href="https://www.linkedin.com/" class="fab fa-linkedin"></e>
             </div>
@@ -404,7 +402,7 @@
 
         <div class="box">
             <h3>about us</h3>
-            <p>This is an interactive Covid-19 site created by Shashi Kiran.
+            <p>This is a Responsive Covid-19 Site created by Shashi Kiran.
             </p>
         </div>
 
@@ -430,19 +428,19 @@
         <div class="box">
             <h3>follow us</h3>
             <a href="https://www.whatsapp.com/">
-                <img src="images/whatsapp.png" alt="Image Missing">
+                <img src="/images/whatsapp.png" alt="Image Missing">
             </a>
             <a href="https://www.facebook.com/">
-                <img src="images/facebook.png" alt="Image Missing">
+                <img src="/images/facebook.png" alt="Image Missing">
             </a>
             <a href="https://twitter.com/">
-                <img src="images/twitter.png" alt="Image Missing">
+                <img src="/images/twitter.png" alt="Image Missing">
             </a>
             <a href="https://www.instagram.com/">
-                <img src="images/instagram.png" alt="Image Missing">
+                <img src="/images/instagram.png" alt="Image Missing">
             </a>
             <a href="https://www.youtube.com/">
-                <img src="images/youtube.png" alt="Image Missing">
+                <img src="/images/youtube.png" alt="Image Missing">
             </a>
         </div>
 
@@ -460,15 +458,12 @@
 <!-- footer section ends -->
 
 
+
 <!-- scroll top  -->
 
 <a href="#home" class="scroll-top">
     <img src="images/scroll-img.png" alt="Image Missing">
 </a>
-
-
-<!-- jquery cdn link  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 
 <!-- preloader scripts starts  -->
@@ -496,11 +491,30 @@
     function closeFullImg(){
         fullImgBox.style.display = "none";
     }
-
 </script>
 
 <!-- full-img scripts ends  -->
 
+<!-- menu bar script starts -->
+<script>
+
+    $(document).ready(function()
+    {
+        $('#menu').click(function(){
+            $(this).toggleClass('fa-times');
+            $('.navbar').toggleClass('nav-toggle');
+        });
+        
+        $(window).on('load scroll', function(){
+            $('#menu').removeClass('fa-times');
+            $('.navbar').removeClass('nav-toggle');
+        });
+
+    });
+
+</script>
+
+<!-- menu bar script ends -->
 
 </body>
 </html>
